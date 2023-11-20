@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WalidMohmmedOdev1.MainPage">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Spacing="20">
+        <Image Source="me.jpg" Aspect="AspectFill" HeightRequest="450" WidthRequest="350" />
+        <Label Text="WALID MOHMMED" FontSize="Large" />
+     
+        <Label Text="Bartin Universitesi Bilgisayar Mühendisliği " FontSize="Small" />
+        <Label Text="Ödev1" FontSize="Small" />
+        
+        
+        
+    </StackLayout>
+
+</ContentPage>
