@@ -4,11 +4,38 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:WalidMohmmedOdev1"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Flyout">
 
     <ShellContent
-        Title="Home"
+        Icon="home.png"
+        Title="Ana Syafa"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    <ShellContent
+     Icon="krediheasplama.png"
+     Title="Kredi Hesaplama"
+     ContentTemplate="{DataTemplate local:KrediHesaplamaPage}"
+     Route="KrediHesaplamaPage"
+     />
+
+    <ShellContent
+       Icon="heightweight.png"
+     Title="Vicut Kitle Indeksi"   
+     ContentTemplate="{DataTemplate local:VicutKitleIndeksiPage}"
+     Route="VicutKitleIndeksiPage"
+        />
+
+    <ShellContent
+        Icon="colorselector.png"
+        Title="Renk Seçici"
+        ContentTemplate="{DataTemplate local:RenkSeciciPage}"
+        Route="RenkSeciciPage" />
+
+    <ShellContent
+        Icon="yapilacaklar.png"
+        Title="Yapılacaklar"
+        ContentTemplate="{DataTemplate local:YapilacaklarPage}"
+        Route="YapilacaklarPage" />
 
 </Shell>

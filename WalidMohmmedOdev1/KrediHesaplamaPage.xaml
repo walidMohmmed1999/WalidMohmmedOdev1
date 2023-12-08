@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WalidMohmmedOdev1.KrediHesaplamaPage"
+             Title="KrediHesaplamaPage">
+
+
+
+    <StackLayout Padding="20">
+
+        <Label Text="Kredi Hesaplama" FontSize="28" TextColor="#2C3E50" HorizontalOptions="CenterAndExpand"/>
+
+        <!-- Loan type picker -->
+        <Picker x:Name ="LoanTypePicker" Title = "Select Loan Type" VerticalOptions="CenterAndExpand" Margin="0,0,0,20">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>İhtiyaç Kredisi</x:String>
+                    <x:String>Konut Kredisi</x:String>
+                    <x:String>Taşıt Kredisi</x:String>
+                    <x:String>Ticari Kredisi</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <!-- Loan amount entry -->
+        <Entry x:Name="LoanAmountEntry" Placeholder="Kredi Tutarı (TL)" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+        <!-- Interest rate entry -->
+        <Entry x:Name="InterestRateEntry" Placeholder="Faiz Oranı (%)" Keyboard="Numeric" Margin="0,0,0,10"/>
+
+        <!-- Loan term entry -->
+        <Entry x:Name="LoanTermEntry" Placeholder="Vade (Ay)" Keyboard="Numeric" Margin="0,0,0,20"/>
+
+        <!-- Calculate button -->
+        <Button Text="Calculate" Clicked="CalculateButton_Clicked" BackgroundColor="#3498DB" TextColor="White" CornerRadius="15" HeightRequest="50"/>
+
+        <!-- Result label -->
+        <Label x:Name="ResultLabel" Text="" FontSize="18" TextColor="#2C3E50" VerticalOptions="CenterAndExpand" Margin="0,20,0,0"/>
+
+    </StackLayout>
+
+</ContentPage>

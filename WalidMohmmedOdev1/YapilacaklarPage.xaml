@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WalidMohmmedOdev1.YapilacaklarPage"
+             Title="YapilacaklarPage">
+
+
+    <StackLayout Padding="20" Spacing="15">
+
+     
+        <Label Text="Yapılacaklar" FontSize="20" TextColor="#3498DB" HorizontalOptions="Center"/>
+
+  
+        <ListView x:Name="TasksListView" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10" Spacing="10" BackgroundColor="White">
+                            
+                            <Label Text="{Binding TaskName}" FontSize="16" TextColor="#2C3E50" VerticalOptions="Center"/>
+
+                           
+                            <ImageButton Source="modify.png" Clicked="ModifyButton_Clicked" CommandParameter="{Binding .}" WidthRequest="20" HeightRequest="20"/>
+
+                            <ImageButton Source="delete.png" Clicked="DeleteButton_Clicked" CommandParameter="{Binding .}" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Entry x:Name="TaskEntry" Placeholder="Yeni görev ekle" VerticalOptions="CenterAndExpand" WidthRequest="200"/>
+            <Button Text="Ekle" Clicked="AddButton_Clicked" BackgroundColor="#3498DB" TextColor="White" WidthRequest="80" HeightRequest="40" />
+        </StackLayout>
+
+      
+        <Label x:Name="MessageLabel" Text="" FontSize="16" TextColor="Green" HorizontalOptions="Center" VerticalOptions="End" Margin="0,20,0,0"/>
+
+    </StackLayout>
+
+</ContentPage>

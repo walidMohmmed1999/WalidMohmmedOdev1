@@ -1,4 +1,7 @@
-﻿namespace WalidMohmmedOdev1
+﻿using System;
+using Microsoft.Maui.Controls;
+namespace WalidMohmmedOdev1
+
 {
     public partial class MainPage : ContentPage
     {
@@ -8,7 +11,9 @@
         {
             InitializeComponent();
         }
-
- 
+        private async void OnVicutKitleIndeksiClicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("//VicutKitleIndeksiPage");
+        }
     }
 }

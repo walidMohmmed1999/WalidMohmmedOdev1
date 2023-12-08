@@ -49,11 +49,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\me.jpg" />
+	  <None Remove="Resources\Images\add.png" />
+	  <None Remove="Resources\Images\colorselector.png" />
+	  <None Remove="Resources\Images\delete.png" />
+	  <None Remove="Resources\Images\heightweight.png" />
+	  <None Remove="Resources\Images\home.png" />
+	  <None Remove="Resources\Images\krediheasplama.png" />
+	  <None Remove="Resources\Images\modify.png" />
+	  <None Remove="Resources\Images\mypicture.jpg" />
+	  <None Remove="Resources\Images\yapilacaklar.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="KrediHesaplamaPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="RenkSeciciPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="VicutKitleIndeksiPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="YapilacaklarPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
